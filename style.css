@@ -1,3 +1,16 @@
 body {
-    background-color: #f8f9fa;
+    background-image: url('Medya/genel_arkaplan.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
+    background-repeat: no-repeat;
+}
+
+.silik-arkaplan {
+    background: linear-gradient(rgba(255, 255, 255, 0.70), rgba(255, 255, 255, 0.70)), 
+                url('Medya/hakkimda_arkaplan.jpg');
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
