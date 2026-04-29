@@ -1,5 +1,5 @@
 body {
-    background-image: url('Medya/genel_arkaplan.jpg');
+    background-image: url('medya/genel_arkaplan.jpg');
     background-size: cover; 
     background-position: center; 
     background-attachment: fixed; 
@@ -8,7 +8,7 @@ body {
 
 .silik-arkaplan {
     background: linear-gradient(rgba(255, 255, 255, 0.70), rgba(255, 255, 255, 0.70)), 
-                url('Medya/hakkimda_arkaplan.jpg');
+                url('medya/hakkimda_arkaplan.jpg');
     
     background-size: cover;
     background-position: center;
