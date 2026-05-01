@@ -5,6 +5,8 @@ body {
     background-position: center; 
     background-attachment: fixed; 
     background-repeat: no-repeat;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 /* Hakkımda ve Şehir bölümleri için daha belirgin bir arka plan efekti */
@@ -15,6 +17,8 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
 }
 
 /* Şehir bölümleri için daha hafif bir arka plan efekti */
@@ -25,6 +29,18 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+/* Ana içerik kutuları için etkileşim animasyonu */
+.silik-arkaplan, .sehir-silik-arkaplan {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.silik-arkaplan:hover, .sehir-silik-arkaplan:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important;
 }
 
 /* Tüm Slider Resimlerini Sabitleme */
@@ -39,4 +55,173 @@ body {
     .carousel-inner img {
         height: 250px;
     }
+}
+
+/* Liste elemanları için geçiş efekti */
+.list-group-item {
+    transition: padding-left 0.3s ease, color 0.3s ease;
+}
+
+/* Fare üzerine geldiğinde yazıyı sağa kaydır ve renk değiştir */
+.list-group-item:hover {
+    padding-left: 20px;
+    color: #0d6efd;
+    background-color: transparent !important;
+    cursor: pointer;
+}
+
+/* Özel Kaydırma Çubuğu (Scrollbar) Tasarımı */
+::-webkit-scrollbar {
+    width: 10px;
+}
+/* Kaydırma çubuğunun arka planı */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+/* Kaydırma çubuğunun kendisi */
+::-webkit-scrollbar-thumb {
+    background: #6c757d;
+    border-radius: 10px;
+}
+/* Kaydırma çubuğunun üzerine gelindiğinde renk değişimi */
+::-webkit-scrollbar-thumb:hover {
+    background: #495057; /* Üzerine gelince biraz daha koyulaşır */
+}
+
+@keyframes icerikGelisi {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Giriş Yap Butonu Pulse Animasyonu */
+@keyframes nabiz-atisi {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(220, 53, 69, 0.7); /* Bootstrap danger kırmızısı */
+    }
+    70% {
+        transform: scale(1.05);
+        box-shadow: 0 0 0 10px rgba(220, 53, 69, 0); /* Işık dışarı yayılarak kaybolur */
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(220, 53, 69, 0);
+    }
+}
+
+/* Sadece danger (kırmızı) olan butonlara bu efekti uygular */
+.btn-danger {
+    animation: nabiz-atisi 2s infinite;
+}
+
+.silik-arkaplan, .sehir-silik-arkaplan {
+    animation: icerikGelisi 0.8s ease-out forwards;
+}
+
+.nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 80%;
+}
+
+.nav-link.active::after {
+    width: 80%;
+    background: #0d6efd; 
+}
+
+/* Fareyle metin seçildiğinde arka planı ve yazıyı değiştirir */
+::selection {
+    background-color: #198754;
+    color: white;
+}
+
+/* Yazı içi renk geçiş efekti */
+.renkli-baslik {
+    background: linear-gradient(45deg, #0d6efd, #0dcaf0); /* Bootstrap mavi ve turkuaz renkleri */
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+/* Tokat için Yeşil Tonlarında Geçiş */
+.yesil-gradient {
+    background: linear-gradient(45deg, #198754, #20c997);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+/* Denizli için Turkuaz/Mor Tonlarında Geçiş */
+.info-gradient {
+    background: linear-gradient(45deg, #0dcaf0, #6f42c1);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+.renkli-baslik, .yesil-gradient, .info-gradient {
+    background-size: 200% auto;
+    animation: renkAkisi 4s linear infinite;
+}
+
+@keyframes renkAkisi {
+    to {
+        background-position: 200% center;
+    }
+}
+
+/* Profil fotoğrafı neon parlama efekti */
+.parlayan-foto {
+    box-shadow: 0 0 25px rgba(13, 110, 253, 0.4) !important;
+}
+
+/* Sağ alt köşeye sabitlenmiş Yukarı Çık butonu */
+.yukari-cik {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #0d6efd; /* Bootstrap ana mavisi */
+    color: white;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    transition: transform 0.3s ease, background 0.3s ease;
+    z-index: 1000; /* Her zaman diğer içeriklerin üstünde kalmasını sağlar */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.yukari-cik:hover {
+    transform: translateY(-5px); /* Fare gelince hafifçe yukarı zıplar */
+    background: #0b5ed7;
+    color: white;
 }
