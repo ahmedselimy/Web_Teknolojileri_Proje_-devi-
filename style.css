@@ -1,3 +1,4 @@
+/* Genel Arka Plan Ayarları */
 body {
     background-image: url('medya/genel_arkaplan.jpg');
     background-size: cover; 
@@ -6,6 +7,7 @@ body {
     background-repeat: no-repeat;
 }
 
+/* Hakkımda ve Şehir bölümleri için daha belirgin bir arka plan efekti */
 .silik-arkaplan {
     background: linear-gradient(rgba(255, 255, 255, 0.70), rgba(255, 255, 255, 0.70)), 
                 url('medya/hakkimda_arkaplan.jpg');
@@ -13,4 +15,28 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+/* Şehir bölümleri için daha hafif bir arka plan efekti */
+.sehir-silik-arkaplan {
+    background: linear-gradient(rgba(255, 255, 255, 0.70), rgba(255, 255, 255, 0.70)), 
+                url('medya/sehir_arkaplan.jpg');
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Tüm Slider Resimlerini Sabitleme */
+.carousel-inner img {
+    height: 450px; /* Slider'ın her zaman bu yükseklikte kalmasını sağlarız */
+    object-fit: cover; /* Resmin en-boy oranı bozulmadan bu yüksekliğe mükemmel sığmasını sağlar */
+    object-position: center; /* Resmi ortadan hizalar */
+}
+
+/* Telefon ekranları için boyutları ayarladık*/
+@media (max-width: 768px) {
+    .carousel-inner img {
+        height: 250px;
+    }
 }

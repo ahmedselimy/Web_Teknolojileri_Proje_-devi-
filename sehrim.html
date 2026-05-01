@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Şehrim</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="medya/favicon.png">
+</head>
+<body class="bg-light">
+
+<!-- Navbar Kısmı -->
+
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="medya/favicon.png" alt="Logo" width="40" height="40" class="d-inline-block align-text-top me-2">
+            </a> 
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Menü Linkleri -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Hakkımda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ozgecmis.html">Özgeçmiş</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="sehrim.html">Şehrim</a></li>
+                    <li class="nav-item"><a class="nav-link" href="mirasimiz.html">Mirasımız</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ilgialanlarim.html">İlgi Alanlarım</a></li>
+                    <li class="nav-item"><a class="nav-link" href="iletisim.html">İletişim</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-outline-light ms-2 btn-sm mt-1 mb-1" href="login.html">Giriş Yap</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SAKARYA KISMI -->
+    <div class="container mt-5 mb-5">
+        <div class="row bg-white p-4 p-md-5 rounded shadow-sm sehir-silik-arkaplan">
+            <div class="col-12 text-center mb-4">
+                <h1 class="display-5 fw-bold text-primary">Sakarya'yı Keşfedin</h1>
+                <p class="lead text-secondary">Doğası, tarihi ve kültürel zenginlikleriyle Marmara'nın incisi.</p>
+            </div>
+
+            <!-- Sakarya Slider -->
+            <div class="col-lg-8 mx-auto mb-5">
+                <div id="sakaryaSlider" class="carousel slide shadow" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#sakaryaSlider" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#sakaryaSlider" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#sakaryaSlider" data-bs-slide-to="2"></button>
+                        <button type="button" data-bs-target="#sakaryaSlider" data-bs-slide-to="3"></button>
+                    </div>
+
+                    <div class="carousel-inner rounded">
+                        <div class="carousel-item active">
+                            <img src="medya/sakarya_1.jpg" class="d-block w-100" alt="Sakarya Manzara 1">
+                            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                                <h5>Şehir Manzarası (Şeyh Edebali Camii)</h5>
+                                <p>Sakarya'nın en güzel manzaralarından biri.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="medya/sakarya_2.jpg" class="d-block w-100" alt="Sakarya Manzara 2">
+                            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                                <h5>Kent Park Tarihi Su Çarkı</h5>
+                                <p>Doğa yürüyüşleri ve piknik için ideal.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="medya/sakarya_3.jpg" class="d-block w-100" alt="Sakarya Manzara 3">
+                            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                                <h5>Doğa Manzarası</h5>
+                                <p>Doğa ile iç içe yaşayan, sakin bir yaşam tarzı sunar.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="medya/sakarya_4.jpg" class="d-block w-100" alt="Sakarya Manzara 4">
+                            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                                <h5>Taraklı Evleri</h5>
+                                <p>Osmanlı sivil mimarisinin en güzel örneklerini barındıran şirin bir ilçe.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#sakaryaSlider" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Önceki</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#sakaryaSlider" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Sonraki</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Sakarya Bilgileri -->
+            <div class="col-lg-12">
+                <h3 class="border-bottom pb-2 text-primary">Genel Bilgiler</h3>
+                <p><strong>Nüfus:</strong> Yaklaşık 1.100.000</p>
+                <p>Sakarya, Marmara Bölgesi'nin hızla gelişen, sanayi ve tarımı bir arada barındıran önemli şehirlerinden biridir. Yeşilin her tonunu görebileceğiniz doğasıyla öne çıkar.</p>
+
+                <h3 class="border-bottom pb-2 mt-4 text-primary">Gezilecek Yerler</h3>
+                <ul class="list-group list-group-flush mb-4">
+                    <li class="list-group-item bg-transparent"><strong>Sapanca Gölü:</strong> Sahilinde yürüyüş yapabileceğiniz popüler bir turizm merkezi.</li>
+                    <li class="list-group-item bg-transparent"><strong>Taraklı Evleri:</strong> Tarihi dokusunu korumuş şirin bir ilçe.</li>
+                    <li class="list-group-item bg-transparent"><strong>Acarlar Longozu:</strong> Türkiye'nin tek parça halindeki en büyük subasar ormanı.</li>
+                    <li class="list-group-item bg-transparent"><strong>Justinianus Köprüsü (Beşköprü):</strong> Erken Bizans döneminden günümüze ulaşan muazzam bir tarihi yapı.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- TOKAT KISMI -->
+    <div class="container mt-5 mb-5">
+        <div class="row bg-white p-4 p-md-5 rounded shadow-sm sehir-silik-arkaplan">
+            <div class="col-12 text-center mb-4">
+                <h1 class="display-5 fw-bold text-success">Tokat'ı Keşfedin</h1>
+                <p class="lead text-secondary">Yeşillikleri ve tarihi dokusuyla Anadolu ve Karadeniz'i bağlayan köprü.</p>
+            </div>
+
+            <!-- Tokat Slider -->
+            <div class="col-lg-8 mx-auto mb-5">
+                <div id="tokatSlider" class="carousel slide shadow" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#tokatSlider" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#tokatSlider" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#tokatSlider" data-bs-slide-to="2"></button>
+                        <button type="button" data-bs-target="#tokatSlider" data-bs-slide-to="3"></button>
+                    </div>
+
+                    <div class="carousel-inner rounded">
+                        <div class="carousel-item active">
+                            <img src="medya/tokat_1.jpg" class="d-block w-100" alt="Tokat Manzara 1">
+                            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                                <h5>Şehir Manzarası</h5>
+                                <p>Şehir tarihi ve kültürel zenginlikleriyle dikkat çeker.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="medya/tokat_2.jpg" class="d-block w-100" alt="Tokat Manzara 2">
+                            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                                <h5>Tokat Kalesi Saat Kulesi</h5>
+                                <p>Kalenin üzerinde bulunan tarihi saat kulesi.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="medya/tokat_3.jpg" class="d-block w-100" alt="Tokat Manzara 3">
+                            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                                <h5>Tokat Kalesi</h5>
+                                <p>Şehre tepeden bakan ihtişamlı tarihi kale.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="medya/tokat_4.jpg" class="d-block w-100" alt="Tokat Manzara 4">
+                            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                                <h5>Tarihi Şehir Merkezi</h5>
+                                <p>Şehrin tarihi ve kültürel zenginliklerini barındıran bölümü.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#tokatSlider" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Önceki</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#tokatSlider" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Sonraki</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Tokat Bilgileri -->
+            <div class="col-lg-12">
+                <h3 class="border-bottom pb-2 text-success">Genel Bilgiler</h3>
+                <p><strong>Nüfus:</strong> Yaklaşık 600.000</p>
+                <p>Tokat, Orta Karadeniz Bölgesi'nde yer alan, köklü tarihi, eşsiz doğası ve zengin mutfağı ile Anadolu'nun saklı cennetlerinden biridir. Yeşilırmak'ın bereket kattığı topraklar üzerine kurulmuştur.</p>
+
+                <h3 class="border-bottom pb-2 mt-4 text-success">Gezilecek Yerler</h3>
+                <ul class="list-group list-group-flush mb-4">
+                    <li class="list-group-item bg-transparent"><strong>Ballıca Mağarası:</strong> Oluşumu milyonlarca yıl süren, sarkıt ve dikitleriyle ünlü doğa harikası.</li>
+                    <li class="list-group-item bg-transparent"><strong>Taşhan:</strong> 17. yüzyılda inşa edilen ve günümüzde hala canlılığını koruyan tarihi ticaret merkezi.</li>
+                    <li class="list-group-item bg-transparent"><strong>Tokat Kalesi:</strong> Şehrin en yüksek noktasında bulunan ve tarihi Roma dönemine uzanan etkileyici yapı.</li>
+                    <li class="list-group-item bg-transparent"><strong>Kaz Gölü:</strong> Göçmen kuşların uğrak noktası olan ve doğa tutkunları için eşsiz manzaralar sunan bir göl.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- DENİZLİ KISMI -->
+    <div class="container mt-5 mb-5">
+        <div class="row bg-white p-4 p-md-5 rounded shadow-sm sehir-silik-arkaplan">
+            <div class="col-12 text-center mb-4">
+                <h1 class="display-5 fw-bold text-info">Denizli'yi Keşfedin</h1>
+                <p class="lead text-secondary">Dünyaca ünlü travertenleri ve antik kentleriyle Ege'nin incisi.</p>
+            </div>
+
+            <!-- Denizli Slider -->
+            <div class="col-lg-8 mx-auto mb-5">
+                <div id="denizliSlider" class="carousel slide shadow" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#denizliSlider" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#denizliSlider" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#denizliSlider" data-bs-slide-to="2"></button>
+                        <button type="button" data-bs-target="#denizliSlider" data-bs-slide-to="3"></button>
+                    </div>
+
+                    <div class="carousel-inner rounded">
+                        <div class="carousel-item active">
+                            <img src="medya/denizli_1.jpg" class="d-block w-100" alt="Denizli Manzara 1">
+                            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                                <h5>Pamukkale Travertenleri</h5>
+                                <p>Beyazın en güzel hali, UNESCO Dünya Mirası.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="medya/denizli_2.jpg" class="d-block w-100" alt="Denizli Manzara 2">
+                            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                                <h5>Kleopatra Gölü</h5>
+                                <p>Antik dönemden kalma şifalı özellikleri olduğuna inanılan bir göl.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="medya/denizli_3.jpg" class="d-block w-100" alt="Denizli Manzara 3">
+                            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                                <h5>Denizli Renkli Evleri</h5>
+                                <p>Şehrin en güzel ve en çok ziyaret edilen semtlerinden biri.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="medya/denizli_4.jpg" class="d-block w-100" alt="Denizli Manzara 4">
+                            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                                <h5>Denizli Horozu</h5>
+                                <p>Şehrin meşhur ve ikonik sembolü.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#denizliSlider" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Önceki</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#denizliSlider" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Sonraki</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Denizli Bilgileri -->
+            <div class="col-lg-12">
+                <h3 class="border-bottom pb-2 text-info">Genel Bilgiler</h3>
+                <p><strong>Nüfus:</strong> Yaklaşık 1.050.000</p>
+                <p>Denizli, Ege Bölgesi'nin iç kesimlerinde yer alan, tekstil sanayisi, horozu ve benzersiz doğa harikası Pamukkale ile dünya çapında tanınan bir şehrimizdir.</p>
+
+                <h3 class="border-bottom pb-2 mt-4 text-info">Gezilecek Yerler</h3>
+                <ul class="list-group list-group-flush mb-4">
+                    <li class="list-group-item bg-transparent"><strong>Pamukkale Travertenleri:</strong> Termal suların oluşturduğu eşsiz beyaz teraslar.</li>
+                    <li class="list-group-item bg-transparent"><strong>Hierapolis Antik Kenti:</strong> Pamukkale'nin hemen yanında yer alan antik havuzu ve tiyatrosuyla ünlü tarihi şehir.</li>
+                    <li class="list-group-item bg-transparent"><strong>Teleferik ve Bağbaşı Yaylası:</strong> Şehrin sıcağından kaçıp serinlemek ve harika manzaralar izlemek için ideal bir mekan.</li>
+                    <li class="list-group-item bg-transparent"><strong>Güney Şelalesi:</strong> Doğal güzelliği ve serin sularıyla gizli kalmış cennet köşelerden biri.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
