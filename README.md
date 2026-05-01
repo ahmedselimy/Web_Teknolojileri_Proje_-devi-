@@ -1,0 +1,1 @@
+Şu anda geliştirme aşamasında... :)
