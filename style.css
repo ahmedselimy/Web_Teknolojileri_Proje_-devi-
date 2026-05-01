@@ -225,3 +225,24 @@ body {
     background: #0b5ed7;
     color: white;
 }
+
+/* Sayfa yapısını dikey bir esnek kutuya çevirir */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Ana içerik kısmını (main/container) boşluğu doldurmaya zorlar */
+main, .container {
+    flex: 1 0 auto;
+}
+
+/* Footer'ın her zaman en altta kalmasını sağlar */
+footer {
+    flex-shrink: 0;
+}
