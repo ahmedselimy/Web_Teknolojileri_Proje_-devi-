@@ -246,3 +246,9 @@ main, .container {
 footer {
     flex-shrink: 0;
 }
+
+/* İlgi alanlarındaki emojileri ekstra büyütmek için */
+.buyuk-emoji {
+    font-size:9rem !important; /* Standart display-1 boyutundan daha büyüktür. İstersen 8rem veya 9rem de yapabilirsin. */
+    line-height: 1;
+}
