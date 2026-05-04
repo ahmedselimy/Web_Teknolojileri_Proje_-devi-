@@ -33,12 +33,23 @@ body {
     -webkit-backdrop-filter: blur(8px);
 }
 
+.github-silik-arkaplan {
+    background: linear-gradient(rgba(255, 255, 255, 0.70), rgba(255, 255, 255, 0.70)), 
+                url('medya/github_arkaplan.png');
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
 /* Ana içerik kutuları için etkileşim animasyonu */
-.silik-arkaplan, .sehir-silik-arkaplan {
+.silik-arkaplan, .sehir-silik-arkaplan, .github-silik-arkaplan {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.silik-arkaplan:hover, .sehir-silik-arkaplan:hover {
+.silik-arkaplan:hover, .sehir-silik-arkaplan:hover, .github-silik-arkaplan:hover {
     transform: translateY(-5px);
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important;
 }
@@ -120,7 +131,7 @@ body {
     animation: nabiz-atisi 2s infinite;
 }
 
-.silik-arkaplan, .sehir-silik-arkaplan {
+.silik-arkaplan, .sehir-silik-arkaplan, .github-silik-arkaplan {
     animation: icerikGelisi 0.8s ease-out forwards;
 }
 
