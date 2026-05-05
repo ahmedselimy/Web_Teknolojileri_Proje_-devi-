@@ -162,9 +162,9 @@
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             
-            const githubKullaniciAdi = 'ahmedselimy'; 
+            const githubKullaniciAdi = 'ahmedselimy'; // GitHub kullanıcı adı
 
-            const apiUrl = `https://api.github.com/users/${githubKullaniciAdi}`;
+            const apiUrl = `https://api.github.com/users/${githubKullaniciAdi}`; // GitHub API URL'si
 
             fetch(apiUrl)
                 .then(response => {
@@ -182,7 +182,7 @@
                     document.getElementById('github-takipci').textContent = data.followers;
                     document.getElementById('github-link').href = data.html_url;
                 })
-                .catch(error => {
+                .catch(error => { // Hata durumunda kullanıcıya bilgi verme
                     console.error('API Çekme Hatası:', error);
                     document.getElementById('github-isim').textContent = "Bağlantı Hatası";
                     document.getElementById('github-bio').textContent = "GitHub verileri şu an çekilemiyor. Lütfen internet bağlantınızı kontrol edin.";

@@ -32,7 +32,7 @@ body {
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
 }
-
+/* GitHub bölümü için daha koyu bir arka plan efekti */
 .github-silik-arkaplan {
     background: linear-gradient(rgba(255, 255, 255, 0.70), rgba(255, 255, 255, 0.70)), 
                 url('medya/github_arkaplan.png');
@@ -48,7 +48,7 @@ body {
 .silik-arkaplan, .sehir-silik-arkaplan, .github-silik-arkaplan {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
+/* Fare üzerine geldiğinde kutuların hafifçe yükselmesi ve gölge eklenmesi */
 .silik-arkaplan:hover, .sehir-silik-arkaplan:hover, .github-silik-arkaplan:hover {
     transform: translateY(-5px);
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important;
@@ -98,7 +98,7 @@ body {
 ::-webkit-scrollbar-thumb:hover {
     background: #495057; /* Üzerine gelince biraz daha koyulaşır */
 }
-
+/* İçerik gelme animasyonu */
 @keyframes icerikGelisi {
     from {
         opacity: 0;
@@ -130,15 +130,15 @@ body {
 .btn-danger {
     animation: nabiz-atisi 2s infinite;
 }
-
+/* Ana içerik kutularına içerik gelme animasyonu */
 .silik-arkaplan, .sehir-silik-arkaplan, .github-silik-arkaplan {
     animation: icerikGelisi 0.8s ease-out forwards;
 }
-
+/* Navbar linklerine alt çizgi efekti */
 .nav-link {
     position: relative;
 }
-
+/* Alt çizgi için pseudo-element */
 .nav-link::after {
     content: '';
     position: absolute;
@@ -151,11 +151,11 @@ body {
     background: white;
     transition: width 0.3s ease;
 }
-
+/* Fare üzerine gelince alt çizgi genişler */
 .nav-link:hover::after {
     width: 80%;
 }
-
+/* Aktif sayfa linkine kalıcı alt çizgi efekti */
 .nav-link.active::after {
     width: 80%;
     background: #0d6efd; 
@@ -193,12 +193,12 @@ body {
     -webkit-text-fill-color: transparent;
     display: inline-block;
 }
-
+/* Renk geçiş animasyonu */
 .renkli-baslik, .yesil-gradient, .info-gradient {
     background-size: 200% auto;
     animation: renkAkisi 4s linear infinite;
 }
-
+/* Renk akışı animasyonu */
 @keyframes renkAkisi {
     to {
         background-position: 200% center;
@@ -230,7 +230,7 @@ body {
     z-index: 1000; /* Her zaman diğer içeriklerin üstünde kalmasını sağlar */
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
-
+/* Fare gelince butonun hafifçe yükselmesi ve renk değişimi */
 .yukari-cik:hover {
     transform: translateY(-5px); /* Fare gelince hafifçe yukarı zıplar */
     background: #0b5ed7;
@@ -242,7 +242,7 @@ html, body {
     height: 100%;
     margin: 0;
 }
-
+/* Tüm sayfa yapısını dikey bir esnek kutuya çevirir, böylece footer her zaman en altta kalır ve ana içerik boşluğu doldurur */
 body {
     display: flex;
     flex-direction: column;

@@ -56,7 +56,7 @@
     <!-- ANA İÇERİK -->
     <main class="container mt-5 mb-5" id="app">
         
-        <div class="text-center mb-5 silik-arkaplan p-4 rounded shadow-sm">
+        <div class="text-center mb-5 silik-arkaplan p-4 rounded shadow-sm"> // Ana başlık ve alt başlık
             <h1 class="display-5 fw-bold renkli-baslik">İletişim</h1>
             <p class="text-muted mt-2">Benimle İletişime Geçin</p>
         </div>
@@ -184,8 +184,8 @@
             alert("✅ Vanilla JS Doğrulaması Başarılı! Mesajınız İletildi.");
         }
 
-        // --- 2. VUE.JS (FRAMEWORK) DENETİM MOTORU ---
-        const { createApp } = Vue;
+        // --- 2. VUE.JS DENETİM MOTORU ---
+        const { createApp } = Vue; // Vue'nun createApp fonksiyonunu kullanarak yeni bir Vue uygulaması oluşturuyoruz
 
         createApp({
             data() {
@@ -197,8 +197,8 @@
             methods: {
                 vueJSDenetle() {
                     // Regex Kuralları
-                    const emailKurali = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-                    const telefonKurali = /^[0-9]{10,11}$/;
+                    const emailKurali = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Basit bir e-posta doğrulama regex'i
+                    const telefonKurali = /^[0-9]{10,11}$/; // Telefon numarası sadece rakamlardan oluşmalı ve 10-11 hane olmalıdır
 
                     // Vue Modeli üzerinden (this.form) denetimler
                     if (!this.form.ad.trim()) { alert("Vue.js Hatası: Lütfen adınızı giriniz!"); return; }
