@@ -161,6 +161,27 @@ body {
     background: #0d6efd; 
 }
 
+/* Sadece mobil ekranda (Hamburger menüdeyken) geçerli olacak kurallar */
+@media (max-width: 991px) {
+    
+    /* Menü öğelerini tamamen sola yaslar */
+    .navbar-collapse .navbar-nav {
+        align-items: flex-start !important;
+    }
+    
+    .navbar-nav .nav-link {
+        text-align: left !important;
+        width: fit-content; /* Çizginin tüm satırı kaplamasını engeller, sadece yazının altında kalır */
+        padding-left: 0 !important; /* Sol taraftaki gereksiz boşluğu alır */
+    }
+    
+    /* Çizginin merkezden değil soldan başlamasını sağlar */
+    .navbar-nav .nav-link::after {
+        left: 0 !important;
+        transform: none !important;
+    }
+}
+
 /* Fareyle metin seçildiğinde arka planı ve yazıyı değiştirir */
 ::selection {
     background-color: #198754;
